@@ -6,27 +6,27 @@ pageEncoding="UTF-8"%>
 <html>
 
 <head>
-
+<meta charset="UTF-8">
+<title>ログイン画面</title>
+</head>
 <style>
-div-main-container {
+.div-main-container {
     height: 100vh;
     padding-top: 20vh;
 }
-div-main-secondlayer-container {
+.div-main-secondlayer-container {
     margin: auto;
     min-height: 480px;
     min-width: 720px;
 }
-text-colon-container {
-    text-align: right;
+.text-narrow-horizontal-margin {
     padding-right: 2px;
     padding-left: 2px;
 }
+.text-colon-container {
+    text-align: right;
+}
 </style>
-<meta charset="UTF-8">
-<title>Login Page</title>
-</head>
-
 <body>
     <form action="/login" method="post">
         <div class="div-main-container"> 
@@ -51,9 +51,9 @@ text-colon-container {
                 <div class="row d-flex justify-content-center" style="margin-bottom: 15px">
                     <div class="col-md-6">
                         <div class="form-group row d-flex justify-content-center">
-                            <label for="inputStaffId" class="col-sm-2 col-form-label">社員ID</label>
-                            <label for="inputStaffId" class="col-sm-1 col-form-label text-colon-container">:</label>
-                            <div class="col-sm-9">
+                            <label for="inputStaffId" class="col-sm-3 col-form-label text-narrow-horizontal-margin">社員ID</label>
+                            <label for="inputStaffId" class="col-sm-1 col-form-label text-narrow-horizontal-margin text-colon-container">:</label>
+                            <div class="col-sm-8">
                                 <input type="text" class="form-control" id="inputStaffId" value="">
                             </div>
                         </div>        
@@ -63,9 +63,9 @@ text-colon-container {
                 <div class="row d-flex justify-content-center" style="margin-bottom: 15px">
                     <div class="col-md-6">
                         <div class="form-group row d-flex justify-content-center">
-                            <label for="inputStaffPass" class="col-sm-2 col-form-label">パスワード</label>
-                            <label for="inputStaffPass" class="col-sm-1 col-form-label text-colon-container">:</label>
-                            <div class="col-sm-9">
+                            <label for="inputStaffPass" class="col-sm-3 col-form-label text-narrow-horizontal-margin">パスワード</label>
+                            <label for="inputStaffPass" class="col-sm-1 col-form-label text-narrow-horizontal-margin text-colon-container">:</label>
+                            <div class="col-sm-8">
                                 <input type="text" class="form-control" id="inputStaffPass" value="">
                             </div>
                         </div>        
