@@ -3,11 +3,12 @@ pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <html>
 
 <head>
 <meta charset="UTF-8">
-<title>ログイン画面</title>
+<title>ログイン</title>
 </head>
 <style>
 .div-main-container {
@@ -43,7 +44,7 @@ pageEncoding="UTF-8"%>
                 <div class="row d-flex justify-content-center" style="margin-bottom: 30px">
                     <div class="col-md-6">
                         <div class="form-group row d-flex justify-content-center">
-                            <h5 class="text-center" id="outMessage">メッセージ</h5>
+                            <h5 class="text-center" id="outMessage" name="outMessage">メッセージ</h5>&nbsp;
                         </div>        
                     </div>
                 </div>
@@ -54,7 +55,7 @@ pageEncoding="UTF-8"%>
                             <label for="inputStaffId" class="col-sm-3 col-form-label text-narrow-horizontal-margin">社員ID</label>
                             <label for="inputStaffId" class="col-sm-1 col-form-label text-narrow-horizontal-margin text-colon-container">:</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputStaffId" value="">
+                                <input type="text" class="form-control" id="inputStaffId" name="inputStaffId" value="">
                             </div>
                         </div>        
                     </div>
@@ -66,7 +67,7 @@ pageEncoding="UTF-8"%>
                             <label for="inputStaffPass" class="col-sm-3 col-form-label text-narrow-horizontal-margin">パスワード</label>
                             <label for="inputStaffPass" class="col-sm-1 col-form-label text-narrow-horizontal-margin text-colon-container">:</label>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputStaffPass" value="">
+                                <input type="text" class="form-control" id="inputStaffPass" name="inputStaffPass" value="">
                             </div>
                         </div>        
                     </div>
